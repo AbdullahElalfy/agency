@@ -1,6 +1,7 @@
 /* Start Global  */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
@@ -1146,6 +1147,66 @@ h6 {
 
 .testimonials .test p {
   margin-top: 10px;
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .testimonials {
+    height: auto;
+    min-height: 400px;
+    padding: 20px 15px;
+  }
+
+  .testimonials .container {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    min-height: 300px;
+    perspective: 1000px;
+    margin-bottom: 90px;
+  }
+
+  .testimonials .testi-cont {
+    height: auto;
+    min-height: 300px;
+  }
+
+  .testimonials .test {
+    width: 59%;
+    max-width: 363px;
+    height: auto;
+    min-height: 187px;
+    left: 20%;
+    transform: translateX(-50%);
+    padding: 14px;
+    top: 29px;
+    border-radius: 8px;
+  }
+
+  .testimonials .test img {
+    width: 70px;
+    height: 70px;
+    right: -8px;
+    top: -12px;
+    object-fit: cover;
+  }
+
+  .testimonials .test h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+  }
+
+  .testimonials .test span {
+    font-size: 11px;
+  }
+
+  .testimonials .test p {
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 1.4;
+    word-wrap: break-word;
+  }
 }
 
 /* End Testimonials */
