@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Normalize Lib -->
+    <link rel="stylesheet" href="./CSS/Libs/normalize/normalize.css" />
+    <!-- AOS Lib -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <!-- Fav Icon -->
+    <link rel="icon" href="./Assests/IMG/blue-logo.png" type="image/png" />
+    <!-- Link CSS File -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- Font Awesome Lib -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Font  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Coding Agency</title>
+  </head>
+
+  <body>
+    <!-- Start Setting Section -->
+    <div class="setting">
+      <div class="set-icon">
+        <i class="fa-solid fa-gear"></i>
+      </div>
+      <div class="colors">
+        <p>Color</p>
+        <div class="cont">
+          <i class="fa-solid fa-circle fr-color"></i>
+          <i class="fa-solid fa-circle se-color"></i>
+          <i class="fa-solid fa-circle th-color"></i>
+          <i class="fa-solid fa-circle fo-color"></i>
+        </div>
+      </div>
+      <div class="dot-set">
+        <p>Show Dots</p>
+        <div class="btns">
+          <span class="yes active">Show</span>
+          <span class="hide">Hide</span>
+        </div>
+      </div>
+    </div>
+    <!-- End Setting Section -->
+    <!-- Start Dot Links -->
+    <ul class="dots">
+      <li data-name="about-us">
+        <a href="#about-us"> <i class="fa-solid fa-circle fr-color"></i></a>
+      </li>
+      <li data-name="timeline">
+        <a href="#timeline"> <i class="fa-solid fa-circle fr-color"></i></a>
+      </li>
+      <li data-name="skills">
+        <a href="#skills"> <i class="fa-solid fa-circle fr-color"></i></a>
+      </li>
+      <li data-name="gallery">
+        <a href="#gallery"> <i class="fa-solid fa-circle fr-color"></i></a>
+      </li>
+      <li data-name="features">
+        <a href="#features"> <i class="fa-solid fa-circle fr-color"></i></a>
+      </li>
+      <li data-name="Reviews">
+        <a href="#testimonials"> <i class="fa-solid fa-circle fr-color"></i></a>
+      </li>
+    </ul>
+    <!-- End Dot Links -->
+    <!-- Start Hero Section -->
+    <div class="hero-section">
+      <!-- Start Background  -->
+      <div class="overlay"></div>
+      <video
+        src="./Assests/VID/blue.mp4"
+        autoplay
+        loop
+        muted
+        id="bg"
+        preload="auto"
+      ></video>
+      <!-- End Background  -->
+      <!-- Start Header -->
+      <div class="header">
+        <div class="container">
+          <div class="header-content">
+            <img
+              src="./Assests/IMG/blue-logo.png"
+              alt=""
+              class="logo"
+              id="logo"
+            />
+            <ul class="header-btns">
+              <li><a href="#about-us">About</a></li>
+              <li><a href="#timeline">Timeline</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Header -->
+      <!-- Start Rsponsive Header -->
+      <div class="toggle-menu">
+        <i class="fa-solid fa-bars"></i>
+        <span class="esc">X</span>
+        <div class="menu">
+          <ul class="header-btns">
+            <li><a href="#about-us">About</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Rsponsive Header -->
+      <!-- Start Landing -->
+      <div class="landing">
+        <div class="container">
+          <div class="text">
+            <h1>We Are <span class="autoType">Coding </span>Agency</h1>
+            <p>
+              We build fast, clean, and modern websites that boost your
+              business.
+            </p>
+            <button class="btn-donate">
+              <a href="#about-us">Learn More</a>
+            </button>
+          </div>
+          <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+          <script>
+            var typed = new Typed(".autoType", {
+              strings: [
+                "Creative",
+                "Innovative",
+                "Reliable",
+                "Efficient",
+                "Cutting-edge",
+                "User-friendly",
+              ],
+              typeSpeed: 100,
+              backSpeed: 100,
+              loop: true,
+            });
+          </script>
+          <div class="laptopSec">
+            <div class="laptop">
+              <div class="screen">
+                <div class="screen-glow"></div>
+                <div class="screen-content">Hello, Code!</div>
+              </div>
+              <div class="keyboard"></div>
+              <div class="base"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Landing -->
+    </div>
+    <!-- End Hero Section -->
+    <!-- Start About Us -->
+    <div class="aboutUS" id="about-us">
+      <div class="container">
+        <h1 class="title" id="animatedTitle">Code that changes the game</h1>
+        <p class="about-us-text">
+          We don’t just write code — we engineer digital weapons. At our core,
+          we’re not developers — we’re creators of velocity. We build websites
+          that aren’t just modern — they’re blazing fast, brutally clean, and
+          built to convert. From landing pages to full-scale platforms, our code
+          is scalable, secure, and sharp. We’re aggressive with innovation,
+          obsessed with performance, and unapologetically bold. If you’re ready
+          to lead — not follow — then you’re in the right place.
+        </p>
+      </div>
+    </div>
+    <!-- End About Us -->
+    <!-- Start Timeline -->
+    <div class="timeline" id="timeline">
+      <div class="container">
+        <h1 class="title">Level Up History</h1>
+        <div class="line"></div>
+        <div class="time">
+          <span class="first">2024</span>
+          <span class="second">2025</span>
+          <div
+            class="story one"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <h3>Project Kickoff & Strategy Domination</h3>
+            <p>
+              In 2024, we didn’t just start projects — we launched full-on
+              missions. We dove deep into every client’s vision, dissected their
+              needs, and crafted killer development strategies that smashed
+              deadlines and destroyed obstacles. No fluff, just laser-focused
+              planning to deliver fast, flawless results that blew expectations
+              out of the water.
+            </p>
+          </div>
+          <div
+            class="story two"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <h3>MVP Development & Hardcore Testing</h3>
+            <p>
+              We built rock-solid MVPs engineered to perform perfectly from day
+              one. Every line of code was precision-crafted, tested relentlessly
+              under extreme conditions to crush bugs before they could even
+              think of showing up. Our quality control was ruthless — only
+              flawless, battle-tested products made the cut.
+            </p>
+          </div>
+          <div
+            class="story three"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <h3>Launch Next-Level Web Solutions</h3>
+            <p>
+              By 2025, we weren’t just delivering websites — we dropped next-gen
+              web apps powered by cutting-edge tech stacks like React, Next.js,
+              and Node.js. These solutions are built for speed, scale, and
+              mind-blowing UX that puts our clients miles ahead of their
+              competition. We don’t hand off projects, we unleash growth
+              weapons.
+            </p>
+          </div>
+          <div
+            class="story four"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            <h3>Scale Up & Conquer New Markets</h3>
+            <p>
+              Growth isn’t enough — we conquer. We onboarded new clients across
+              new regions, scaled existing projects with advanced features, and
+              pushed every boundary. Our mission? Own the market, dominate the
+              competition, and make sure our agency is the name everyone fears
+              and respects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Timeline -->
+    <!-- Start Skills -->
+    <div class="skills" id="skills">
+      <h1 class="title" id="animatedTitle">Our Dev Powers</h1>
+      <!-- Brand Marquee Section -->
+      <section class="brand-marquee-section">
+        <div class="marquee-wrapper">
+          <div class="marquee-content">
+            <img src="./Assests/IMG/html.png" alt="Google" class="brand-logo" />
+            <img src="./Assests/IMG/css.png" alt="Google" class="brand-logo" />
+            <img src="./Assests/IMG/js.png" alt="Google" class="brand-logo" />
+            <img
+              src="./Assests/IMG/tailwind (1).png"
+              alt="Google"
+              class="brand-logo"
+            />
+            <img
+              src="./Assests/IMG/typescript.png"
+              alt="Google"
+              class="brand-logo"
+            />
+            <img
+              src="./Assests/IMG/pyLogo.png"
+              alt="Google"
+              class="brand-logo"
+            />
+            <img
+              src="./Assests/IMG/react.png"
+              alt="Google"
+              class="brand-logo"
+            />
+            <img src="./Assests/IMG/vue.png" alt="Google" class="brand-logo" />
+
+            <!-- Duplicate for seamless loop -->
+            <img src="./Assests/IMG/html.png" alt="Google" class="brand-logo" />
+            <img src="./Assests/IMG/css.png" alt="Google" class="brand-logo" />
+            <img src="./Assests/IMG/js.png" alt="Google" class="brand-logo" />
+            <img
+              src="./Assests/IMG/tailwind (1).png"
+              alt="Google"
+              class="brand-logo"
+            />
+            <img
+              src="./Assests/IMG/typescript.png"
+              alt="Google"
+              class="brand-logo"
+            />
+            <img
+              src="./Assests/IMG/pyLogo.png"
+              alt="Google"
+              class="brand-logo"
+            />
+            <img
+              src="./Assests/IMG/react.png"
+              alt="Google"
+              class="brand-logo"
+            />
+            <img src="./Assests/IMG/vue.png" alt="Google" class="brand-logo" />
+          </div>
+        </div>
+      </section>
+      <!-- Brand Marquee Section -->
+    </div>
+    <!-- End Skills -->
+    <!-- Start Image Gallery -->
+    <div class="gallery" id="gallery">
+      <div class="container">
+        <h2 class="title">Projects That Speak Louder</h2>
+        <div class="general-container">
+          <input class="radio" type="radio" name="card" id="cardUno" checked />
+          <label class="content" for="cardUno"> </label>
+
+          <input class="radio" type="radio" name="card" id="cardDos" />
+          <label class="content" for="cardDos"> </label>
+
+          <input class="radio" type="radio" name="card" id="cardTres" />
+          <label class="content" for="cardTres"> </label>
+
+          <input class="radio" type="radio" name="card" id="cardCuatro" />
+          <label class="content" for="cardCuatro"> </label>
+        </div>
+      </div>
+    </div>
+    <!-- End Image Gallery -->
+    <!-- Start Our Features -->
+    <div class="features" id="features">
+      <div class="container">
+        <h2 class="title">Next-Level Perks</h2>
+        <div class="feat-cont">
+          <div class="card" data-aos="fade-up">
+            <img src="./Assests/SVG/programming.svg" alt="" />
+            <h3>Development That Powers Victory</h3>
+            <p>
+              We build clean, fast, unstoppable code that takes your project
+              straight to the top. No delays, no limits—just pure power to
+              dominate your market.
+            </p>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <img src="./Assests/SVG/mobile-app.svg" alt="" />
+            <h3>Mobile Development That Owns the Pocket</h3>
+            <p>
+              We craft apps that hit fast and stay smooth. No lag, no
+              crashes—just power-packed experiences your users can’t put down.
+              Ready to rule every screen, anytime, anywhere.
+            </p>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <img src="./Assests/SVG/web-design.svg" alt="" />
+            <h3>SEO That Crushes the Competition</h3>
+            <p>
+              We don’t play hide and seek with Google. We push your site to the
+              top, grab eyeballs, and keep them hooked. Results-driven
+              strategies that turn clicks into customers—straight up domination.
+            </p>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <img src="./Assests/SVG/graphic-design.svg" alt="" />
+            <h3>Cloud & Servers Built to Conquer</h3>
+            <p>
+              Powerful, scalable, unstoppable. We set up cloud and servers that
+              never quit, handle every load, and keep your business running 24/7
+              without a glitch. Real infrastructure for real winners.
+            </p>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-delay="400">
+            <img src="./Assests/SVG/hosting-icon.svg" alt="" />
+            <h3>Hosting That Never Lets You Down</h3>
+            <p>
+              Rock-solid servers, insane speed, zero downtime. We keep your site
+              live, fast, and ready to handle any traffic surge. Hosting made
+              for winners who want results, not excuses.
+            </p>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-delay="500">
+            <img src="./Assests/SVG/advertising.svg" alt="" />
+            <h3>Marketing That Hits Like a Bullet</h3>
+            <p>
+              No fluff, no noise — just sharp strategies that smash your goals,
+              grab attention, and turn leads into loyal fans. Get ready to
+              dominate your market and leave your competitors eating dust.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Our Features -->
+    <!-- Start Testimonials -->
+    <div class="testimonials" id="testimonials">
+      <div class="container">
+        <h2 class="title">Real Words Real Results</h2>
+        <div class="testi-cont">
+          <div class="test st">
+            <img src="./Assests/IMG/user.png" alt="" />
+            <div class="info">
+              <h4>Ahmed Abdelmagead</h4>
+              <span>CEO At Company</span>
+            </div>
+            <p>
+              "Their eye for detail and creativity blew us away — they didn’t
+              just code, they shaped our brand." ⭐️
+            </p>
+          </div>
+          <div class="test ed">
+            <img src="./Assests/IMG/user.png" alt="" />
+            <div class="info">
+              <h4>Ammar Yasser</h4>
+              <span>CEO At Company</span>
+            </div>
+            <p>
+              "We’ve worked with a lot of dev teams — none matched the quality,
+              speed, and vibe of this agency"⭐️
+            </p>
+          </div>
+          <div class="test rd">
+            <img src="./Assests/IMG/user.png" alt="" />
+            <div class="info">
+              <h4>Omar Khaled</h4>
+              <span>CEO At Company</span>
+            </div>
+            <p>
+              "They treated our project like it was their own. Super clear
+              communication, no fluff, just results."⭐️
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonials -->
+    <!-- Start Conatct -->
+    <div class="contact" id="contact">
+      <h3 class="title">Let’s Build Something Great</h3>
+      <div class="container">
+        <div class="inputs">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              class="input"
+              placeholder="Your Name"
+              maxlength="20"
+            />
+            <span class="prog"></span>
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="email"
+              class="input"
+              placeholder="Your Email"
+              maxlength="40"
+            />
+            <span class="prog"></span>
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              class="input"
+              placeholder="Your Phone Number"
+              maxlength="12"
+            />
+            <span class="prog"></span>
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              class="input"
+              placeholder="Subject"
+              maxlength="100"
+            />
+            <span class="prog"></span>
+          </div>
+        </div>
+        <div class="textArea">
+          <textarea id="text" placeholder="Your message"></textarea>
+          <button class="btn">Send</button>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact -->
+    <!-- Start Footer -->
+    <footer class="footer">
+      <div class="container">
+        <h2 class="footer-title">Let’s Build the Future Together</h2>
+        <p class="footer-sub">
+          Crafted with ❤️ by <span>Abdullah El-alfy</span>
+        </p>
+        <div class="footer-icons">
+          <a href="https://github.com/AbdullahElalfy"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="www.linkedin.com/in/abdullah-el-alfy"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+        <p class="footer-copy">© 2025 All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+  <!-- App JS-->
+  <script src="./JS/app.js"></script>
+</html>
